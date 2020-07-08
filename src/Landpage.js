@@ -3,14 +3,16 @@ import "./Landpage.css";
 import w4a1 from "./images/w4a1.jpg";
 import w4a2 from "./images/w4a2.jpg";
 import w4a3 from "./images/w4a3.jpg";
-import w4agif from "./images/w4a.gif";
-import biblioteca from "./images/biblioteca.gif";
+import w4a from "./images/w4a.mp4";
+import recursion from './images/recursion.jpg'
+import biblioteca from "./images/biblioteca.mp4";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
 const Landpage = () => {
   return (
     <div className="landpage">
+
       <h1>Skills</h1>
       <p>
         As an Information Systems Engineer, I learned a wide set of skills, all
@@ -79,11 +81,10 @@ const Landpage = () => {
       <h1>My Projects</h1>
 
       <div
-        className="flex-container mb bordered"
-        style={{ flexDirection: "row-reverse" }}
+        className="flex-container mb bordered" id="biblioteca-container"
       >
         <div className="flex-content-right" id="biblioteca-gif-container">
-          <img src={biblioteca} alt="biblioteca" />
+          <video autoPlay={true} loop={true} src={biblioteca} alt="biblioteca" muted={true} loading="lazy" />
           <span>Hover to zoom</span>
         </div>
         <div
@@ -140,16 +141,16 @@ const Landpage = () => {
         </div>
         <div className="flex-content-right">
           <Carousel autoPlay={3000} animationSpeed={600} infinite>
-            <img src={w4a1} alt="webcam4all screenshot" />
-            <img src={w4a2} alt="webcam4all screenshot" />
-            <img src={w4a3} alt="webcam4all screenshot" />
+            <img src={w4a1} alt="webcam4all screenshot"  loading="lazy"/>
+            <img src={w4a2} alt="webcam4all screenshot" loading="lazy"/>
+            <img src={w4a3} alt="webcam4all screenshot" loading="lazy"/>
           </Carousel>
         </div>
       </div>
 
       <div className="flex-container mb bordered">
         <div className="flex-content-left">
-          <h2>Webcam4all Website</h2>
+          <h2>Webcam4all website</h2>
 
           <a
             href="https://webcam4all.surge.sh/"
@@ -177,9 +178,47 @@ const Landpage = () => {
           </ul>
         </div>
         <div className="flex-content-right">
-          <img src={w4agif} alt="website" />
+          <video src={w4a} autoPlay={true} loop={true} alt="website" muted={true} loading="lazy" />
         </div>
       </div>
+
+
+      <div className="flex-container mb bordered">
+        <div className="flex-content-left">
+          <h2>This site</h2>
+
+          <a
+            href="https://webcam4all.surge.sh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://webcam4all.surge.sh/
+          </a>
+          <br />
+          <a
+            href="https://webcam4all.surge.sh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source code
+          </a>
+          <p>
+            You know what this is about. 
+          </p>
+          <h4 className="tec-used">Technologies used</h4>
+          <ul>
+            <li>ReactJS</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </div>
+        <div className="flex-content-right">
+          <img src={recursion} alt="this website" loading="lazy" />
+        </div>
+      </div>
+
+
+
     </div>
   );
 };
