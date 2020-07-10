@@ -3,9 +3,33 @@ header {
   height: 99%;
   width: 100%;
   min-height: 600px;
+  max-height: 1200px;
   color: white;
   background-color: var(--color-primary);
   background-image: url(/headerbg.svg);
+}
+
+.language-selector {
+  display: flex;
+  border-radius: 15px;
+  padding-left: 15px;
+  position: absolute;
+  top: 7vh;
+  right: 80px;
+  z-index: 2000;
+  fill: white;
+  background-color: var(--color-secondary);
+}
+.language-selector select {
+  background-color: var(--color-secondary);
+  border: none;
+  margin-right: 15px;
+  color: white;
+  font-size: 16px;
+}
+.language-selector svg {
+  height: 40px;
+  width: 40px;
 }
 
 header h1,
@@ -35,50 +59,45 @@ header p {
 }
 
 .triangle {
-  z-index: 0;
+  overflow: visible;
+  z-index: 2;
   position: absolute;
   left: 40px;
   display: inline-block;
-  padding: 16vh;
   box-sizing: border-box;
   background-color: rgb(10, 0, 66);
   width: 120vh;
   height: 100%;
   min-height: 600px;
-  max-width: 95%;
+  max-width: 1200px;
   min-width: 800px;
   clip-path: polygon(5% 135%, 105% 5%, 5% 5%);
 }
+.triangle-content {
+  padding: 14%;
+}
 .triangleSmall {
-  padding: 14vh;
-  box-sizing: border-box;
   background-color: var(--color-accent);
-  width: 100vh;
-  height: 100%;
-  min-height: 600px;
-  max-width: 80%;
-  min-width: 400px;
-  clip-path: polygon(3% 75%, 75% 3%, 3% 3%);
-  position: absolute;
-  left: 55px;
-  top: 8px
+  left: 30px;
+  top: -10px;
+  clip-path: polygon(5% 75%, 75% 5%, 5% 5%);
 }
 .triangleSmall2 {
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.24);
-  width: 25vh;
-  height: 22vh;
-  clip-path: polygon(0% 120%, 110% 0%, 0% 0%);
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(70% 30%, 77.5% 30%, 100% 2%, 100% 0%, 70% 0%);
   position: absolute;
-  right: 5vw;
-  top: 10vh;
+  right: 5%;
+  top: 9%;
   z-index: 1000;
 }
 .triangleSmall3 {
   box-sizing: border-box;
   border: 4px solid white;
   width: 450px;
-  height: 300px;
+  height: 200px;
   clip-path: polygon(5% 100%, 100% 100%, 100% 5%);
   position: absolute;
   right: 60px;
@@ -86,29 +105,35 @@ header p {
 }
 
 nav {
-  position: relative;
-  z-index: 2;
   float: right;
-  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: flex-end;
+  justify-content: center;
+  height: calc(100% - 100px);
+  z-index: 20;
   margin-right: 100px;
   text-align: right;
 }
-nav li {
-  list-style-type: none;
+nav a {
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  display: block;
   font-size: 30px;
-  margin-bottom: 40px;
-}
-nav li a {
   padding: 15px 25px;
   text-decoration: none;
+  height: auto;
   color: white;
   background-color: var(--color-secondary);
 }
-nav li a:hover {
+
+nav a:hover {
   background-color: var(--color-primary);
   border: 1px solid var(--color-secondary);
   border-bottom: 5px solid var(--color-secondary);
   border-left: 5px solid var(--color-secondary);
+  margin-bottom: 10px;
 }
 
 .contact {
@@ -153,6 +178,15 @@ nav li a:hover {
   animation: key-arrow infinite 2s ease-out;
 }
 
+
+
+
+
+
+
+
+
+
 @keyframes key-spin {
   from {
     transform: rotate(0deg);
@@ -175,14 +209,27 @@ nav li a:hover {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .triangle {
-    padding: 40px;
+    max-width: 91%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    min-height: 700px;
+  }
+  .triangle {
     clip-path: polygon(5% 80%, 300% 5%, 0% 0%);
-    max-width: 95%;
-    min-width: 100vw;
+    max-width: 100%;
+    min-width: 100%;
     left: 0;
     padding-right: 30px;
+  }
+  .triangle-content {
+    padding: 80px;
+  }
+  header p {
+    max-width: 500px;
   }
   .triangleSmall {
     display: none;
@@ -193,16 +240,28 @@ nav li a:hover {
   nav {
     display: none;
   }
+  .language-selector {
+    right: 30px;
+    top: 40px;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   header h2,
   header h1 {
-    font-size: 35px;
+    font-size: 30px;
     height: 20px;
   }
   header {
-    height: 700px;
+    height: 800px;
+  }
+  .triangle-content {
+    padding: 38px;
+  }
+  .language-selector {
+    top: unset;
+    bottom: 160px;
+    right: 20px;
   }
   header h3 {
     font-size: 20px;
@@ -226,12 +285,13 @@ nav li a:hover {
 @media print {
   header {
     height: 100%;
+    min-height: 100%;
+  }
+  .language-selector {
+    display: none;
   }
   .triangleSmall2 {
     display: none;
-  }
-  .triangleSmall {
-    left: 35px;
   }
   .contact a {
     display: block;

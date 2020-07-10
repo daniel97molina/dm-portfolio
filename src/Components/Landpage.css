@@ -13,8 +13,8 @@
   text-decoration: none;
   color: var(--color-secondary);
   color: white;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom: 60px;
   background-color: var(--color-primary);
   background-image: url(/headerbg.svg);
 }
@@ -36,12 +36,19 @@
   box-sizing: border-box;
   padding: 20px;
 }
+.bordered a {
+  text-decoration: none;
+  color: var(--color-primary)
+}
+.bordered a:hover{
+  text-decoration: underline;
+}
 .bordered:hover{
   border-color: var(--color-primary);
 }
 
 .content-wrapper:hover {
-  color: var(--color-primary);
+  
 }
 .ml {
   margin-left: 20px;
@@ -58,6 +65,12 @@
   width: 55%;
   padding: 20px;
   padding-right: 40px;
+  color: var(--color-main-text);
+}
+.flex-content{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
   color: var(--color-main-text);
 }
 .flex-content-right{
@@ -79,14 +92,7 @@
 }
 .flex-content-left h2{
   color: var(--color-main-text);
-  font-weight: 100;
-}
-.flex-content-left a{
-  text-decoration: none;
-  color: var(--color-primary)
-}
-.flex-content-left a:hover{
-  text-decoration: underline;
+  font-weight: 300;
 }
 .landpage h4{
   font-weight: 400;
@@ -120,9 +126,9 @@
   #biblioteca-gif-container video{
     transition: all 500ms ease-in-out;
   }
-  #biblioteca-gif-container video:hover{
+  #biblioteca-gif-container:hover > video{
     transform: scale(1.55) translateX(-170px) translateY(10px);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   }
   #biblioteca-description-container{
     transition: all 500ms ease-in-out;

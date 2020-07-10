@@ -1,90 +1,33 @@
 import React from "react";
-import "./Landpage.css";
-import w4a1 from "./images/w4a1.jpg";
-import w4a2 from "./images/w4a2.jpg";
-import w4a3 from "./images/w4a3.jpg";
-import w4a from "./images/w4a.mp4";
-import recursion from './images/recursion.jpg'
-import biblioteca from "./images/biblioteca.mp4";
+import w4a1 from "../images/w4a1.jpg";
+import w4a2 from "../images/w4a2.jpg";
+import w4a3 from "../images/w4a3.jpg";
+import w4a from "../images/w4a.mp4";
+import recursion from "../images/recursion.jpg";
+import biblioteca from "../images/biblioteca.mp4";
+import model1 from "../images/3d1.jpg";
+import model2 from "../images/3d2.jpg";
+import model3 from "../images/3d3.jpg";
+import model4 from "../images/3d4.jpg";
+import model5 from "../images/3d5.jpg";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
-const Landpage = () => {
+const Projects = () => {
   return (
-    <div className="landpage">
+    <>
+      <h1 id="projects">My Projects</h1>
 
-      <h1>Skills</h1>
-      <p>
-        As an Information Systems Engineer, I learned a wide set of skills, all
-        the way from server management to coding and UI/UX. I've specialized in
-        development. I never stop learning, this list will change soon.
-      </p>
-      <div className="flex-container">
-        <div className="content-wrapper bordered">
-          <h2>Database & data Access</h2>
-          <ul>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
-            <li>SQLite</li>
-            <li>JPA, JPQL</li>
-            <li>Spring data</li>
-          </ul>
-        </div>
-
-        <div className="content-wrapper ml bordered">
-          <h2>Backend</h2>
-          <ul>
-            <li>Java</li>
-            <li>Spring boot</li>
-            <li>Rest API</li>
-            <li>JWT Authentication</li>
-            <li>JUnit</li>
-            <li>Android</li>
-            <li>JasperReports</li>
-          </ul>
-        </div>
-
-        <div className="content-wrapper ml bordered">
-          <h2>Frontend</h2>
-          <ul>
-            <li>React</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Javascript</li>
-            <li>JQuery</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="flex-container">
-        <div className="content-wrapper bordered">
-          <h2>Technical Skills</h2>
-          <ul>
-            <li>Git</li>
-            <li>Docker & Docker swarm</li>
-            <li>CD/CI: Jenkins & Azure DevOps</li>
-            <li>TDD</li>
-            <li>Linux</li>
-          </ul>
-        </div>
-        <div className="content-wrapper ml bordered">
-          <h2>Other Skills</h2>
-          <ul>
-            <li>3D modelling: Blender & Cinema 4D</li>
-            <li>Intermediate Photoshop & GIMP</li>
-            <li>I speak Spanish and English</li>
-          </ul>
-        </div>
-      </div>
-
-      <h1>My Projects</h1>
-
-      <div
-        className="flex-container mb bordered" id="biblioteca-container"
-      >
+      <div className="flex-container mb bordered" id="biblioteca-container">
         <div className="flex-content-right" id="biblioteca-gif-container">
-          <video autoPlay={true} loop={true} src={biblioteca} alt="biblioteca" muted={true} loading="lazy" />
+          <video
+            autoPlay={true}
+            loop={true}
+            src={biblioteca}
+            alt="biblioteca"
+            muted={true}
+            loading="lazy"
+          />
           <span>Hover to zoom</span>
         </div>
         <div
@@ -141,9 +84,9 @@ const Landpage = () => {
         </div>
         <div className="flex-content-right">
           <Carousel autoPlay={3000} animationSpeed={600} infinite>
-            <img src={w4a1} alt="webcam4all screenshot"  loading="lazy"/>
-            <img src={w4a2} alt="webcam4all screenshot" loading="lazy"/>
-            <img src={w4a3} alt="webcam4all screenshot" loading="lazy"/>
+            <img src={w4a1} alt="webcam4all screenshot" loading="lazy" />
+            <img src={w4a2} alt="webcam4all screenshot" loading="lazy" />
+            <img src={w4a3} alt="webcam4all screenshot" loading="lazy" />
           </Carousel>
         </div>
       </div>
@@ -167,9 +110,7 @@ const Landpage = () => {
           >
             Source code
           </a>
-          <p>
-            Created to showcase the app and how to configure and use it.
-          </p>
+          <p>Created to showcase the app and how to configure and use it.</p>
           <h4 className="tec-used">Technologies used</h4>
           <ul>
             <li>ReactJS</li>
@@ -178,23 +119,20 @@ const Landpage = () => {
           </ul>
         </div>
         <div className="flex-content-right">
-          <video src={w4a} autoPlay={true} loop={true} alt="website" muted={true} loading="lazy" />
+          <video
+            src={w4a}
+            autoPlay={true}
+            loop={true}
+            alt="website"
+            muted={true}
+            loading="lazy"
+          />
         </div>
       </div>
-
 
       <div className="flex-container mb bordered">
         <div className="flex-content-left">
           <h2>This site</h2>
-
-          <a
-            href="https://webcam4all.surge.sh/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://webcam4all.surge.sh/
-          </a>
-          <br />
           <a
             href="https://webcam4all.surge.sh/"
             target="_blank"
@@ -202,9 +140,7 @@ const Landpage = () => {
           >
             Source code
           </a>
-          <p>
-            You know what this is about. 
-          </p>
+          <p>You know what this is about.</p>
           <h4 className="tec-used">Technologies used</h4>
           <ul>
             <li>ReactJS</li>
@@ -217,10 +153,45 @@ const Landpage = () => {
         </div>
       </div>
 
+      <div className="flex-container mb bordered" id="models">
+        <div className="flex-content-left flex-content">
+          <h2>3D models</h2>
 
+          <a
+            href="https://www.turbosquid.com/Search/Artists/3-D-W-o-r-l-d"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            See on Turbosquid
+          </a>
+          <p>
+            I create 3D models in my free time. They're available for purchase
+            at Turbosquid. I use Blender for modelling and Substance Painter for
+            texturing. I've also used Cinema 4D in the past.
+          </p>
 
-    </div>
+          <Carousel
+            autoPlay={3000}
+            slidesPerPage={2}
+            centered={true}
+            animationSpeed={600}
+            infinite
+            breakpoints={{
+              640: {
+                slidesPerPage: 1,
+              },
+            }}
+          >
+            <img src={model3} alt="webcam4all screenshot" loading="lazy" />
+            <img src={model5} alt="webcam4all screenshot" loading="lazy" />
+            <img src={model4} alt="webcam4all screenshot" loading="lazy" />
+            <img src={model1} alt="webcam4all screenshot" loading="lazy" />
+            <img src={model2} alt="webcam4all screenshot" loading="lazy" />
+          </Carousel>
+        </div>
+      </div>
+    </>
   );
 };
 
-export default Landpage;
+export default Projects;
