@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1100px;
   margin: 20px auto;
-  margin-bottom: 800px;
+  margin-bottom: 140px;
 }
 
 .landpage > h1 {
@@ -19,18 +19,18 @@
   background-image: url(/headerbg.svg);
 }
 .landpage p {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .flex-container {
   display: flex;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .content-wrapper {
   color: var(--color-main-text);
   width: 50%;
 }
-.bordered{
+.bordered {
   border: 5px solid var(--color-secondary-trans);
   clip-path: polygon(0% 100%, 100% 100%, 100% 5%, 0% 0%);
   box-sizing: border-box;
@@ -38,102 +38,111 @@
 }
 .bordered a {
   text-decoration: none;
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
-.bordered a:hover{
+.bordered a:hover {
   text-decoration: underline;
 }
-.bordered:hover{
+.bordered:hover {
   border-color: var(--color-primary);
 }
 
-.content-wrapper:hover {
-  
-}
 .ml {
   margin-left: 20px;
   width: 50%;
 }
-.content-wrapper h2 {
+.landpage h2 {
   margin: 0;
   margin-bottom: 15px;
-  font-weight: 100;
+  font-weight: 400;
 }
-
-.flex-content-left{
+.landpage h3{
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.flex-content-left {
   box-sizing: border-box;
   width: 55%;
   padding: 20px;
   padding-right: 40px;
   color: var(--color-main-text);
 }
-.flex-content{
+.flex-content-left a {
+  display: block;
+}
+.flex-content {
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
   color: var(--color-main-text);
 }
-.flex-content-right{
+.flex-content-right {
   box-sizing: border-box;
   width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#biblioteca-container{
+#biblioteca-container {
   flex-direction: row-reverse;
 }
-#biblioteca-gif-container span{
+#biblioteca-gif-container span {
   display: none;
 }
-.flex-container img, .flex-container video{
+.flex-container img,
+.flex-container video {
   width: 100%;
   object-fit: cover;
 }
-.flex-content-left h2{
-  color: var(--color-main-text);
-  font-weight: 300;
-}
-.landpage h4{
+.landpage h4 {
   font-weight: 400;
+  margin-top: 0;
   margin-bottom: 5px;
 }
-.landpage ul{
+.landpage ul {
   margin-top: 0;
 }
-.mb{
+.mb {
   margin-bottom: 60px;
 }
 
 .awssld__content > img {
   object-fit: scale-down !important;
 }
-.awssld__content{
+.awssld__content {
   background-color: white !important;
 }
+.print-only {
+  display: none !important;
+}
+.landpage-description {
+  margin-bottom: 60px !important;
+  padding-left: 12px;
+  
+}
 
-@media only screen and (min-width: 1001px){
-
-  #biblioteca-gif-container{
+@media only screen and (min-width: 1001px) {
+  #biblioteca-gif-container {
     width: 54%;
   }
-  #biblioteca-gif-container span{
+  #biblioteca-gif-container span {
     display: inline-block;
     margin: 0 auto;
     margin-top: 5px;
     color: rgb(136, 136, 136);
   }
-  #biblioteca-gif-container video{
+  #biblioteca-gif-container video {
     transition: all 500ms ease-in-out;
   }
-  #biblioteca-gif-container:hover > video{
+  #biblioteca-gif-container:hover > video {
     transform: scale(1.55) translateX(-170px) translateY(10px);
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   }
-  #biblioteca-description-container{
+  #biblioteca-description-container {
     transition: all 500ms ease-in-out;
   }
-  #biblioteca-gif-container:hover ~ #biblioteca-description-container{
+  #biblioteca-gif-container:hover ~ #biblioteca-description-container {
     opacity: 0.1;
     z-index: -1;
   }
@@ -147,28 +156,49 @@
     flex-direction: column-reverse;
     margin: 0;
   }
-  #biblioteca-container{
+  #biblioteca-container {
     flex-direction: column;
   }
   .content-wrapper {
     width: 100%;
   }
-  .bordered{
+  .bordered {
     margin-bottom: 5px;
   }
   .ml {
     margin-left: 0;
   }
-  .landpage p {
-    padding: 0 15px;
-  }
-  .flex-content-left, .flex-content-right{
+
+  .flex-content-left,
+  .flex-content-right {
     width: 100%;
   }
-  
-  .flex-content-right{
+
+  .flex-content-right {
     max-width: 600px;
     margin: 0 auto;
     margin-top: 25px;
+  }
+}
+
+@media print {
+  .print-only {
+    display: block !important;
+  }
+  .not-printed {
+    display: none;
+  }
+  .bordered {
+    page-break-inside: avoid;
+  }
+  .page-break {
+    page-break-before: always;
+    margin-top: 0 !important;
+  }
+  .landpage {
+    margin-bottom: 0;
+  }
+  .landpage h1{
+    margin-top: 30px;
   }
 }

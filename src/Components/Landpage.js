@@ -1,7 +1,8 @@
 import React from "react";
 import "./Landpage.css";
 import Skills from "./Skills";
-import Projects from './Projects'
+import Projects from "./Projects";
+import PersonalInfo from "./PersonalInfo";
 
 const Landpage = () => {
   return (
@@ -11,6 +12,8 @@ const Landpage = () => {
 
       <Projects></Projects>
 
+      <PersonalInfo></PersonalInfo>
+      
     </div>
   );
 };

@@ -1,59 +1,57 @@
 import React from "react";
 import Skill from "./Skill";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <>
-      <h1 id="skills">Skills</h1>
-      <p>
-        As an Information Systems Engineer, I learned a wide set of skills, all
-        the way from server management to coding and UI/UX. I've specialized in
-        development. I never stop learning, this list will change soon.
-      </p>
+      <h1 id="skills">{t("header.skills")}</h1>
+      <p className="landpage-description">{t("skills.description")}</p>
 
       <div className="flex-container">
-        <Skill title="Database & data Access">
+        <Skill title={t("skills.database")}>
           <li>PostgreSQL</li>
-          <li>MongoDB</li>
           <li>SQLite</li>
           <li>JPA, JPQL</li>
-          <li>Spring data</li>
+          <li>Spring data (Spring data jpa, Spring data rest)</li>
+          <li>MongoDB ({t("skills.beginner")})</li>
         </Skill>
 
         <Skill title="Backend" className="ml">
           <li>Java</li>
           <li>Spring boot</li>
           <li>Rest API</li>
-          <li>JWT Authentication</li>
           <li>JUnit</li>
-          <li>Android</li>
+          <li>{t("skills.jwtAuthentication")}</li>
           <li>JasperReports</li>
+          <li>Android</li>
         </Skill>
 
         <Skill title="Frontend" className="ml">
           <li>React</li>
-          <li>CSS</li>
-          <li>HTML</li>
           <li>Javascript</li>
-          <li>JQuery</li>
-          <li>Bootstrap</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Responsive design</li>
         </Skill>
       </div>
 
       <div className="flex-container">
-        <Skill title="Technical Skills">
+        <Skill title={t("skills.technicalSkills")}>
           <li>Git</li>
           <li>Docker & Docker swarm</li>
-          <li>CD/CI: Jenkins & Azure DevOps</li>
+          <li>CD/CI: Jenkins & Azure DevOps ({t("skills.beginner")})</li>
           <li>TDD</li>
+          <li>{t("skills.oop")}</li>
           <li>Linux</li>
         </Skill>
-        <Skill title="Other Skills" className="ml">
+        <Skill title={t("skills.otherSkills")} className="ml">
+          <li>{t("skills.languages")}</li>
           <a href="#models">
-            <li>3D modelling: Blender & Cinema 4D</li>
+            <li>{t("skills.3d")}</li>
           </a>
-          <li>Intermediate Photoshop & GIMP</li>
-          <li>I speak Spanish and English</li>
+          <li>{t("skills.photoshop")}</li>
         </Skill>
       </div>
     </>

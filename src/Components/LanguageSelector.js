@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const LanguageSelector = (props) => {
@@ -17,12 +17,13 @@ const LanguageSelector = (props) => {
       <select
         name="cars"
         id="cars"
+        value={selectedLanguage}
         onChange={(e) => languageChagendHandle(e.target.value)}
       >
-        <option selected={selectedLanguage.startsWith("en")} value="en">
+        <option value="en">
           English
         </option>
-        <option selected={selectedLanguage.startsWith("es")} value="es">
+        <option value="es">
           Español
         </option>
       </select>

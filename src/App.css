@@ -1,12 +1,12 @@
 :root {
-  --color-primary: #2d00b3;
+  
   --color-primary: #0037db;
-  --color-secondary: #0a0042;
+  --color-secondary: #070042;
   --color-secondary-trans: rgba(10, 0, 66, 0.315);
   --color-accent: #ffa25f;
-  --color-main-text: rgb(42, 42, 42);
-
+  --color-main-text: #414141;
 }
+
 body,
 html,
 .App,

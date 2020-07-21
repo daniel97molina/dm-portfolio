@@ -3,7 +3,7 @@ import React from 'react';
 const Skill = (props) => {
     return (
         <div className={"content-wrapper bordered "+props.className}>
-        <h2>{props.title}</h2>
+        <h3>{props.title}</h3>
         <ul>
             {props.children}
         </ul>

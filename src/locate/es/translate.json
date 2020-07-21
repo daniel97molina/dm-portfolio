@@ -1,16 +1,85 @@
 {
-    "translations": {
-      "header": {
-        "title": "Desarrollador Web Full Stack",
-        "ps": [
-          "I'm an Information Systems Engineer, passionate about programming and eager to learn.",
-          "I love creating solutions to real life necessities and providing tools to improve people's lives"
-        ]
-      },
-      "description": {
-        "title": "description",
-        "value": "Whenever I smell strong tobacco smoke when I'm in an enclosed space such as a room, train, or aircraft, I begin to get angry. There are several reasons. First, medical researchers have shown that secondhand smoke, that is, the smoke from other people's cigarettes, causes cancer and other health problems. If the smoke were car exhaust or burning trash, we would put out the fire and open the windows to get rid of the smoke. Second, it stinks. The smoke drifts away from the smoker and fills the room."
-      }
+  "translations": {
+    "header": {
+      "title": "Desarrollador Web Full Stack",
+      "ps": [
+        "Ingeniero en Sistemas Informáticos, apasionado por la programación, aprendiendo y mejorando continuamente.",
+        "Disfruto resolver problemas y crear herramientas que ayuden a mejorar las vidas de las personas."
+      ],
+      "personalInfo": "Información personal",
+      "skills": "Habilidades y tecnologías",
+      "projects": "Mis proyectos",
+      "contactMe": "Contáctame"
+    },
+    "skills": {
+      "description": "Como Ingeniero en Sistemas, he aprendido una amplia gama de habilidades, desde gestión de servidores y redes, hasta desarrollo y UI/UX. Me he especializado en desarrollo web. Nunca dejo de aprender, así que esta lista cambiará pronto.",
+      "database": "Bases de datos y acceso a datos",
+      "technicalSkills": "Habilidades técnicas",
+      "beginner": "principiante",
+      "jwtAuthentication": "Autenticación con JWT",
+      "oop": "POO",
+      "otherSkills": "Otros",
+      "languages": "Hablo Español (nativo) e Inglés (avanzado)",
+      "3d": "Modelado 3D en Blender & Cinema 4D",
+      "photoshop": "Manejo intermedio de Photoshop & GIMP"
+    },
+    "projects": {
+      "hoverToZoom": "Pasa el cursor para ampliar",
+      "technologiesUsed": "Tecnologías usadas:",
+      "seeOnGooglePlay": "Ver en Google Play",
+      "sourceCode": "Código fuente",
+      "seeOnline": "Ver en linea",
+      "list": [
+        {
+          "title": "Gestión de biblioteca ECO",
+          "ps": [
+            "Fue desarrollado para cubrir las necesidades específicas de un colegio reconocido. Permite a los estudiantes buscar libros con diferentes opciones de filtrado y registrar el uso de equipo multimedia. Los usuarios administrativos pueden gestionar libros, autores, editoriales, etiquetas, administrar préstamos de libros y acceder a reportes de inventario y uso de libros y equipo multimedia.",
+            "Un elemento clave en este proyecto fue brindar una experiencia de usuario sencilla, de modo que incluso los estudiantes más jóvenes pudieran utilizarlo, sin comprometer las funcionalidades del sistema."
+          ]
+        },
+        {
+          "title": "Webcam4all",
+          "ps": [
+            "Esta app permite usar un dispositivo Android como una webcam 1080 inalámbrica para Windows o mac. Toma cada cuadro de la cámara, lo convierte a JPEG y lo envía por HTTP al cliente a través de wi-fi.",
+            "El desafío más grande fue crear un stream de datos ininterrumpido, con poca latencia y sin perder calidad en la imagen.",
+            "Debido a lo inestable que pueden ser las transmisiones inalámbricas, el cliente envía constantemente peticiones a un endpoint de estado que retorna el número del último frame procesado. Si por alguna razón el servidor deja de enviar imágenes, el cliente intentará reconectarse."
+          ]
+        },
+        {
+          "title": "Sitio web para Webcam4all",
+          "ps": [
+            "Creado para mostrar las funcioes de la app y cómo usarla."
+          ]
+        },
+        {
+          "title": "Este sitio",
+          "printTitle": "Mi portafolio",
+          "description": "Quizá quisiste decir: recursión.",
+          "printDescription": "Es la versión interactiva en linea de este documento."
+        },
+        {
+          "title": "Modelos 3D",
+          "seeOnTS": "Ver en Turbosquid.com",
+          "ps": [
+            "Me gusta crear modelos 3D en mi tiempo libre. Están disponibles en Turbosquid.com, el sitio más reconocido para compra y venta de modelos 3D. Uso Blender para el modelado y Substance Painter para aplicar texturas y materiales. También he usado Cinema 4D."
+          ]
+        }
+      ]
+    },
+    "aboutMe": {
+      "languages": "Idiomas",
+      "languagesList": ["Inglés (avanzado)", "Español (nativo)"],
+      "location": "Ubicación",
+      "locationList": [
+        "Santa Ana, El Salvador, Centro América",
+        "Zona horaria: GMT-6"
+      ],
+      "education": "Educación",
+      "informationSystems": "Ingeniería de Sistemas Informáticos - Universidad de El Salvador",
+      "informationSystemsList": [
+        "Egresado con CUM honorífico",
+        "En espera del título debido a la pandemia"
+      ]
     }
   }
-  
+}
