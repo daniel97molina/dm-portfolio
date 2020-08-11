@@ -12,7 +12,7 @@
       "contactMe": "Contact me"
     },
     "skills": {
-      "description": "As an Information Systems Engineer, I learned a wide set of skills, all the way from server management and networking to coding and UI/UX. I've specialized in web development. I never stop learning, so this list will change soon.",
+      "description": "As an Information Systems Engineer, I've learned a wide set of skills, all the way from server management and networking to coding and UI/UX. I've specialized in web development.",
       "database": "Database & data Access",
       "technicalSkills": "Technical Skills",
       "beginner": "beginner",
@@ -33,33 +33,33 @@
         {
           "title": "ECO Library management",
           "ps": [
-            "Developed to cover the specific needs of a prestigious private school. Provides students the ability to search books with various filtering options and register media usage. Administrative users can manage books, authors, publishers, tags, register and manage book loans and access reports.",
+            "Developed to cover the specific needs of a prestigious private school. Provides students with the ability to search books with various filtering options and to register media usage. Administrative users can manage books, authors, publishers, tags, book loans, and access reports.",
             "One of the key elements in this project was keeping the user experience simple, so that the software was intuitive and easy to use for everybody, even the youngest students, without compromising functionality."
           ]
         },
         {
           "title": "Webcam4all",
           "ps": [
-            "This app transforms the user's Android phone into a 1080p wireless webcam for Windows or mac. It takes every frame from the camera, encodes it into JPEG, and sends it over HTTP to the client through wi-fi.",
+            "This Android app turns the user's phone into a 1080p wireless webcam for Windows or macOS. It takes every frame from the camera, encodes it into JPEG, and sends it over HTTP to the client through wi-fi.",
             "The biggest challenge was to provide a low latency and reliable stream of data while maintaining the image quality.",
-            "Because wireless transmissions can be unstable, the client sends requests periodically to a status endpoint that returns the number of the last sent frame to make sure the connection is working. If, for some reason, the server stopped processing frames or the connection was lost, the client will try to reconnect"
+            "Since wireless transmissions can be unstable, the client sends requests periodically to a status endpoint that returns the number of the last sent frame to make sure the connection is working. If, for some reason, the server stopped processing frames or the connection was lost, the client will try to reconnect automatically"
           ]
         },
         {
           "title": "Webcam4all website",
-          "ps": ["Created to showcase the app and how to configure and use it."]
+          "ps": ["Created to showcase the app and how to set it up."]
         },
         {
           "title": "This site",
           "printTitle": "My online portfolio",
           "description": "You know what this one is about.",
-          "printDescription": "This is the online version of this document. Check it out for a more interactive experience."
+          "printDescription": "It is the online version of this document. Check it out for a more interactive experience."
         },
         {
-          "title": "3D models",
+          "title": "3D modelling",
           "seeOnTS": "See on Turbosquid.com",
           "ps": [
-            "I create 3D models in my free time. They're available for purchase at Turbosquid, the biggest site for selling and buying 3D models. I use Blender for modelling and Substance Painter for texturing. I've also used Cinema 4D in the past."
+            "I craft 3D models in my free time. They're available for purchase at Turbosquid, the biggest 3D models marketplace. I use Blender for modelling and Substance Painter for texturing. I've also used Cinema 4D in the past."
           ]
         }
       ]
@@ -75,8 +75,8 @@
       "education": "Education",
       "informationSystems": "Information systems Engineering at Universidad de El Salvador",
       "informationSystemsList": [
-        "To graduate with honors",
-        "I haven't graduated yet, because of the pandemic"
+        "Finished studies, to graduate with honors",
+        "Graduation process has been delayed because of the pandemic"
       ]
     }
   }

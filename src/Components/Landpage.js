@@ -7,6 +7,7 @@ import PersonalInfo from "./PersonalInfo";
 const Landpage = () => {
   return (
     <div className="landpage">
+            
       
       <Skills></Skills>
 
