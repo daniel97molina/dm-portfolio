@@ -5,56 +5,54 @@ import { useTranslation } from "react-i18next";
 const Skills = () => {
   const { t } = useTranslation();
   return (
-    <>
+    <section>
       <h1 id="skills">{t("header.skills")}</h1>
-      <p className="landpage-description">{t("skills.description")}</p>
 
       <div className="flex-container">
         <Skill title={t("skills.database")}>
+          <li>Oracle</li>
           <li>PostgreSQL</li>
-          <li>SQLite</li>
+          <li>MySQL</li>
           <li>JPA, JPQL</li>
-          <li>Spring data (Spring data jpa, Spring data rest)</li>
-          <li>MongoDB ({t("skills.beginner")})</li>
+          <li>Spring data</li>
+          <li>MongoDB</li>
         </Skill>
 
-        <Skill title="Backend" className="ml">
+        <Skill title="Backend">
           <li>Java</li>
-          <li>Spring boot</li>
-          <li>Rest API</li>
-          <li>JUnit</li>
-          <li>{t("skills.jwtAuthentication")}</li>
-          <li>JasperReports</li>
-          <li>Android</li>
+          <li>Java Streams & parallel programming</li>
+          <li>Java EE</li>
+          <li>Spring Framework</li>
+          <li>REST & SOAP API</li>
+          <li>JUnit, Mockito</li>
         </Skill>
 
-        <Skill title="Frontend" className="ml">
-          <li>React</li>
-          <li>Javascript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Responsive design</li>
+        <Skill title="Frontend">
+          <li>ReactJS</li>
+          <li>React Native</li>
+          <li>Javascript, HTML, CSS</li>
         </Skill>
       </div>
 
       <div className="flex-container">
         <Skill title={t("skills.technicalSkills")}>
-          <li>Git</li>
-          <li>Docker & Docker swarm</li>
-          <li>CD/CI: Jenkins & Azure DevOps ({t("skills.beginner")})</li>
-          <li>TDD</li>
+          <li>AWS - Amazon Web Services</li>
+          <li>Docker & Linux</li>
+          <li>Microservices</li>
           <li>{t("skills.oop")}</li>
-          <li>Linux</li>
+          <li>Git & Github</li>
+          <li>Jira</li>
         </Skill>
-        <Skill title={t("skills.otherSkills")} className="ml">
-          <li>{t("skills.languages")}</li>
+        <Skill title={t("skills.otherSkills")}>
+          <li>Native Spanish</li>
+          <li>English C2 - <a href="https://www.efset.org/cert/E6ZjBV">View certificate</a></li>
           <a href="#models">
             <li>{t("skills.3d")}</li>
           </a>
           <li>{t("skills.photoshop")}</li>
         </Skill>
       </div>
-    </>
+    </section>
   );
 };
 

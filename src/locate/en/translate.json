@@ -1,82 +1,161 @@
 {
   "translations": {
     "header": {
-      "title": "Full Stack Web Developer",
+      "title": "Information Systems Engineer",
+      "subtitle": "Full Stack Web Developer",
       "ps": [
-        "I'm an Information Systems Engineer, passionate about programming and eager to learn.",
-        "I love creating solutions to real life problems and tools to improve people's lives."
+        "I'm a proactive developer who swiftly adapts to new challenges. My passion for creating and coding is matched by my commitment to learning continuously. With a proven record of crafting efficient solutions, I thrive in dynamic and collaborative environments, creating innovative software that makes an impact."
       ],
-      "personalInfo": "About me",
+      "experience": "Working Experience",
+      "personalInfo": "About Me",
       "skills": "Skills",
-      "projects": "Projects",
+      "education": "Education",
+      "projects": "Freelancer Experience",
       "contactMe": "Contact me"
     },
     "skills": {
-      "description": "As an Information Systems Engineer, I've learned a wide set of skills, all the way from server management and networking to coding and UI/UX. I've specialized in web development.",
+      "description": "All the way from server management and networking to coding and UI/UX.",
       "database": "Database & data Access",
-      "technicalSkills": "Technical Skills",
-      "beginner": "beginner",
+      "technicalSkills": "Technical Skills and tools",
       "jwtAuthentication": "JWT Authentication",
-      "oop": "OOP",
+      "oop": "Scrum",
       "otherSkills": "Other skills",
-      "languages": "I speak Spanish (native) and English (advanced)",
+      "languages": "Spanish (native) and English (advanced)",
       "3d": "3D modelling: Blender & Cinema 4D",
-      "photoshop": "Intermediate Photoshop & GIMP"
+      "photoshop": "Intermediate Photoshop & GIMP",
+      "cabling": "Structured cabling",
+      "telephony": "IP Telephony Management"
+    },
+    "experience": {
+      "jobs": [
+        {
+          "tittle": "Java Backend Developer",
+          "li": [
+            "Telus International",
+            "June 2022 - Present"
+          ],
+          "description": [
+            "I'm part of a Scrum team where I design, code, test, document, and integrate solutions, along with QA, architecture, and business teams for a health insurance software composed of several microservices communicating via SOAP and REST APIs. I previously worked on an open source collaborative software suite and its migration tools.",
+            "Technologies used: Java, Spring Framework, Spring Boot, JUnit, Rest and SOAP APIs, Oracle, LDAP, AWS, Linux servers, git, Jira"
+          ]
+        },
+        {
+          "tittle": "Full Stack Developer - Servers and Network Manager",
+          "li": [
+            "University of El Salvador (Universidad de El Salvador - Facultad Multidisciplinaria de Occidente)",
+            "July 2021 - June 2022"
+          ],
+          "description": [ "I supported and updated Web Systems built with Java EE and JSP. Also, I supported all the internal and external services, including: IP Telephony (Asterisk), Internet and local networks, Moodle Virtual Classrooms, DNS, Firewall, Internal Applications running on docker containers, Mail accounts, and Wireless Networks.",
+          "Technologies used: Java, Java EE, JSP, JUnit, Rest and SOAP APIs, MySQL, postgreSQL, LDAP, Linux servers, docker, git"
+        ]
+        },
+        {
+          "tittle": "Full Stack Developer - Servers and Network Management Assistant",
+          "li": [
+            "University of El Salvador (Universidad de El Salvador - Facultad Multidisciplinaria de Occidente)",
+            "September 2020 - June 2021"
+          ],
+          "description": [
+            "During this time, I helped migrating and updating legacy web systems written in Java EE and JSP. I also assisted configuring and maintaining the following services: IP Telephony (Asterisk), Internet and local networks, Moodle Virtual Classrooms, Security Cameras, and Wireless Networks.",
+            "Technologies used: Java, Java EE, JSP, JUnit, Rest and SOAP APIs, MySQL, postgreSQL, LDAP, Linux servers, docker, git"
+          ]
+        }
+      ]
     },
     "projects": {
+      "visitMyPortfolio": "Visit my Software Portfolio at",
+      "summary": [
+        "I develop multiplatform mobile applications (Android & iOS) and Web Systems using Java with Spring Boot and React",
+        "My goal is to create scalable, reliable, and efficient software that provides a seamless user experience"
+      ],
       "hoverToZoom": "Hover to zoom",
       "technologiesUsed": "Technologies used:",
       "seeOnGooglePlay": "See on Google Play",
+      "seeOnAppStore": "See on App Store",
       "sourceCode": "Source Code",
       "seeOnline": "See online",
       "list": [
         {
-          "title": "ECO Library management",
+          "title": "ECO Library",
           "ps": [
             "Developed to cover the specific needs of a prestigious private school. Provides students with the ability to search books with various filtering options and to register media usage. Administrative users can manage books, authors, publishers, tags, book loans, and access reports.",
             "One of the key elements in this project was keeping the user experience simple, so that the software was intuitive and easy to use for everybody, even the youngest students, without compromising functionality."
           ]
         },
         {
-          "title": "Webcam4all",
+          "title": "WiMouse",
           "ps": [
-            "This Android app turns the user's phone into a 1080p wireless webcam for Windows or macOS. It takes every frame from the camera, encodes it into JPEG, and sends it over HTTP to the client through wi-fi.",
-            "The biggest challenge was to provide a low latency and reliable stream of data while maintaining the image quality.",
-            "Since wireless transmissions can be unstable, the client sends requests periodically to a status endpoint that returns the number of the last sent frame to make sure the connection is working. If, for some reason, the server stopped processing frames or the connection was lost, the client will try to reconnect automatically"
+            "All-in-one remote control. Features a precise touchpad, media controls, and a fully featured keyboard. Highly customizable, it was designed to be easy to setup and use"
           ]
         },
         {
-          "title": "Webcam4all website",
-          "ps": ["Created to showcase the app and how to set it up."]
+          "title": "Webcam4all",
+          "ps": [
+            "This Android app turns the user's phone into a 1080p wireless webcam for Windows or macOS. It takes every frame from the camera, encodes it into JPEG, and sends it over HTTP to the client through the local network.",
+            "The biggest challenge was to provide a low latency, fault-tolerant, and reliable stream of data while maintaining the image quality."
+          ]
+        },
+        {
+          "title": "WiMouse Website",
+          "ps": [
+            "Created to showcase the app and how to set it up."
+          ]
+        },
+        {
+          "title": "WiMouse Server",
+          "ps": [
+            "Desktop application created to receive mouse and keyboard events from Wimouse App and execute them on the computer. It's a cross-platform application written in NodeJS using the Electron Framework and RobotJS library"
+          ]
+        },
+        {
+          "title": "Webcam4all Website",
+          "ps": [
+            "Created to showcase the app and how to set it up."
+          ]
         },
         {
           "title": "This site",
           "printTitle": "My online portfolio",
-          "description": "You know what this one is about.",
+          "description": "My online portfolio",
           "printDescription": "It is the online version of this document. Check it out for a more interactive experience."
         },
         {
           "title": "3D modelling",
           "seeOnTS": "See on Turbosquid.com",
           "ps": [
-            "I craft 3D models in my free time. They're available for purchase at Turbosquid, the biggest 3D models marketplace. I use Blender for modelling and Substance Painter for texturing. I've also used Cinema 4D in the past."
+            "I create 3D models in my free time. They're available for purchase at Turbosquid, the biggest 3D models marketplace. I use Blender for modelling and Substance Painter for texturing. I've also used Cinema 4D in the past."
           ]
         }
       ]
     },
     "aboutMe": {
       "languages": "Languages I speak",
-      "languagesList": ["Spanish (native)", "English (advanced)"],
+      "languagesList": [
+        "Spanish: native",
+        "English: C2 Proficient"
+      ],
       "location": "Location",
       "locationList": [
         "Country of residence: El Salvador, Central America",
-        "Time zone: GMT-6 (My schedule is flexible, I'm available 24/7)"
+        "Time zone: GMT-6 (with a flexible schedule)"
       ],
       "education": "Education",
-      "informationSystems": "Information systems Engineering at Universidad de El Salvador",
+      "informationSystems": "Information Systems Engineering - Universidad de El Salvador",
       "informationSystemsList": [
-        "Finished studies, to graduate with honors",
-        "Graduation process has been delayed because of the pandemic"
+        "Graduated with honors"
+      ]
+    },
+    "education": {
+      "education": "Education",
+      "informationSystems": "Information Systems Engineering - Universidad de El Salvador",
+      "informationSystemsList": [
+        "2015 - 2019",
+        "Graduated with honors"
+      ],
+      "aws": "AWS Partner: Accreditation (Technical)",
+      "awsList": [
+        "Issued by Amazon Web Services Training and Certification",
+        "View certificate"
       ]
     }
   }

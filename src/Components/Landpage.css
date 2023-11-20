@@ -1,21 +1,29 @@
 .landpage {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 20px auto;
-  margin-bottom: 140px;
+  padding-bottom: 40px;
 }
 
-.landpage > h1 {
-  font-weight: 400;
+.projects-summary {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+section > h1 {
+  font-weight: 600;
   border-left: 5px solid var(--color-secondary);
-  text-align: center;
+  text-align: left;
   padding: 15px 25px;
   text-decoration: none;
   color: var(--color-secondary);
-  color: white;
   margin-top: 100px;
   margin-bottom: 60px;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-transparent);
   background-image: url(/headerbg.svg);
 }
 .landpage p {
@@ -26,6 +34,12 @@
   margin-top: 20px;
 }
 
+h2 {
+  color: var(--color-secondary);
+  margin-top: 50px;
+  font-weight: 400;
+}
+
 .content-wrapper {
   color: var(--color-main-text);
   width: 50%;
@@ -33,14 +47,15 @@
 .bordered {
   border: 5px solid var(--color-secondary-trans);
   clip-path: polygon(0% 100%, 100% 100%, 100% 5%, 0% 0%);
+  border-right: none;
   box-sizing: border-box;
   padding: 20px;
 }
-.bordered a {
+a {
   text-decoration: none;
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
-.bordered a:hover {
+a:hover {
   text-decoration: underline;
 }
 .bordered:hover {
@@ -51,15 +66,21 @@
   margin-left: 20px;
   width: 50%;
 }
-.landpage h2 {
+.bordered h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-weight: 400;
+  font-size: 28px;
+  text-align: left;
+  color: var(--color-secondary);
 }
-.landpage h3{
+.landpage h3 {
   font-weight: 400;
   font-size: 20px;
   margin-left: 10px;
+}
+.skill {
+  text-align: left;
 }
 .flex-content-left {
   box-sizing: border-box;
@@ -68,13 +89,14 @@
   padding-right: 40px;
   color: var(--color-main-text);
 }
-.flex-content-left a {
+.flex-content a {
   display: block;
 }
 .flex-content {
   box-sizing: border-box;
   width: 100%;
-  padding: 20px;
+  padding: 40px;
+  padding-top: 20px;
   color: var(--color-main-text);
 }
 .flex-content-right {
@@ -119,7 +141,26 @@
 .landpage-description {
   margin-bottom: 60px !important;
   padding-left: 12px;
-  
+  padding-right: 12px;
+}
+.half {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  box-sizing: border-box;
+}
+.border-right {
+  border-right: 5px solid var(--color-secondary-trans);
+}
+
+.experiencelist {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 700;
+}
+#projects {
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 1001px) {
@@ -151,33 +192,50 @@
 @media only screen and (max-width: 1000px) {
   .landpage {
     width: 100%;
+    max-width: 600px;
   }
   .flex-container {
     flex-direction: column-reverse;
     margin: 0;
   }
-  #biblioteca-container {
-    flex-direction: column;
+
+  .half {
+    width: 100%;
   }
+
   .content-wrapper {
     width: 100%;
   }
   .bordered {
     margin-bottom: 5px;
+    padding: 10px;
   }
   .ml {
     margin-left: 0;
   }
-
-  .flex-content-left,
-  .flex-content-right {
-    width: 100%;
+  .border-right {
+    border-right: none;
   }
 
   .flex-content-right {
     max-width: 600px;
     margin: 0 auto;
     margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-content {
+    padding: 10px;
+  }
+  .bordered {
+    border-left: none;
+    border-right: none;
+  }
+  section {
+    width: 90%;
+    margin: 0 auto;
+    
   }
 }
 
@@ -188,17 +246,82 @@
   .not-printed {
     display: none;
   }
+  header p {
+    max-width: 600px;
+  }
+  .fixed {
+    position: absolute;
+    top: 530px;
+    left: 110px;
+    z-index: 2000;
+    color: white;
+  }
+  .fixed h1 {
+    display: none;
+  }
+  .fixed h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    color: white;
+    padding-bottom: 6px;
+  }
+  .fixed ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 10px;
+  }
+  .fixed li {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  header h1 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
   .bordered {
     page-break-inside: avoid;
+    padding: 10px 20px;
+  }
+  section > h1 {
+    margin-bottom: 30px;
   }
   .page-break {
     page-break-before: always;
     margin-top: 0 !important;
   }
+  #projects {
+    page-break-before: unset;
+  }
+  .projects-wrapper {
+    display: none;
+  }
+  .projects-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 228px;
+    max-height: 228px;
+  }
+  .projects-summary-description{
+    padding-right: 40px;
+  }
+  .projects-summary-description a {
+    text-decoration: none;
+    color: var(--color-accent)
+  }
+  .projects-summary img {
+    max-height: 100%;
+    height: 100%;
+  }
+
   .landpage {
     margin-bottom: 0;
   }
-  .landpage h1{
+  .landpage h1 {
     margin-top: 30px;
+  }
+  #projects {
+    margin-top: 50px;
   }
 }

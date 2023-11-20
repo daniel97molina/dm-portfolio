@@ -4,20 +4,10 @@ import { useTranslation } from "react-i18next";
 const Project = (props) => {
   const { t } = useTranslation();
   return (
-    <div className="flex-container mb bordered" id={props.id}>
-      <div className={props.right ? "flex-content-left" : "flex-content-left flex-content"}>
+    <div className="flex-container bordered page-break" id={props.id}>
+      <div className="flex-content">
         <h2>{props.title}</h2>
-        {props.links &&
-          props.links.map((l, index) => (
-            <a
-              href={l.link}
-              key={index}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {l.label ? l.label : l.link}
-            </a>
-          ))}
+        {props.right && <div>{props.right}</div>}
         {props.children}
         {props.technologies && (
           <>
@@ -29,8 +19,18 @@ const Project = (props) => {
             </ul>
           </>
         )}
+        {props.links &&
+          props.links.map((l, index) => (
+            <a
+              href={l.link}
+              key={index}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {l.label ? l.label : l.link}
+            </a>
+          ))}
       </div>
-      {props.right && <div className="flex-content-right">{props.right}</div>}
     </div>
   );
 };

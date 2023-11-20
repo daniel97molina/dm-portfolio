@@ -1,61 +1,122 @@
 {
   "translations": {
     "header": {
-      "title": "Desarrollador Web Full Stack",
+      "title": "Ingeniero en Sistemas Informáticos",
+      "subtitle": "Desarrollador Web Full Stack",
       "ps": [
-        "Ingeniero en Sistemas Informáticos, apasionado por la programación, aprendiendo y mejorando continuamente.",
-        "Disfruto resolver problemas y crear herramientas que ayuden a mejorar las vidas de las personas."
+        "Disfruto resolver problemas a través de código y crear herramientas que ayuden a mejorar las vidas de las personas. Apasionado por la programación, aprendiendo y mejorando contínuamente"
       ],
       "personalInfo": "Información personal",
       "skills": "Habilidades y tecnologías",
-      "projects": "Mis proyectos",
-      "contactMe": "Contáctame"
+      "projects": "Proyectos Freelancer",
+      "contactMe": "Contáctame",
+      "experience": "Experiencia Laboral"
     },
     "skills": {
-      "description": "Como Ingeniero en Sistemas, he aprendido una amplia gama de habilidades, desde gestión de servidores y redes, hasta desarrollo y UI/UX, especializándome en desarrollo web.",
+      "description": "Como Ingeniero en Sistemas, he aprendido una amplia gama de habilidades, desde gestión de servidores y redes, hasta desarrollo y UI/UX.",
       "database": "Bases de datos y acceso a datos",
       "technicalSkills": "Habilidades técnicas",
       "beginner": "principiante",
       "jwtAuthentication": "Autenticación con JWT",
-      "oop": "POO",
+      "oop": "POO, TDD, Scrum",
       "otherSkills": "Otros",
-      "languages": "Hablo Español (nativo) e Inglés (avanzado)",
+      "languages": "Español (nativo) e Inglés (avanzado)",
       "3d": "Modelado 3D en Blender & Cinema 4D",
-      "photoshop": "Manejo intermedio de Photoshop & GIMP"
+      "photoshop": "Manejo intermedio de Photoshop & GIMP",
+      "cabling": "Cableado estructurado",
+      "telephony": "Telefonía IP"
+    },
+    "experience": {
+      "jobs": [
+        {
+          "tittle": "Java Backend Developer",
+          "li": [
+            "Telus International",
+            "June 2022 - Present"
+          ],
+          "description": [
+            "I'm part of a Scrum team where I design, code, test, document, and integrate solutions for a insurance-related software. I previously worked on an open source collaborative software suite and it's migration tools.",
+            "Technologies used: Java, Spring Framework, Spring Boot, JUnit, Rest and SOAP APIs, Oracle, LDAP, AWS, Linux servers, git, Jira"
+          ]
+        },
+        {
+          "tittle": "Full Stack Developer - Servers and Network Manager",
+          "li": [
+            "University of El Salvador (Universidad de El Salvador - Facultad Multidisciplinaria de Occidente)",
+            "July 2021 - June 2022"
+          ],
+          "description": [ "I supported and updated Web Systems built with Java EE and JSP. Also, I supported all the internal and external services, including: IP Telephony (Asterisk), Internet and local networks, Moodle Virtual Classrooms, DNS, Firewall, Internal Applications running on docker containers, Mail accounts, and Wireless Networks.",
+          "Technologies used: Java, Java EE, JSP, JUnit, Rest and SOAP APIs, MySQL, postgreSQL, LDAP, Linux servers, docker, git"
+        ]
+        },
+        {
+          "tittle": "Full Stack Developer - Servers and Network Management Assistant",
+          "li": [
+            "University of El Salvador (Universidad de El Salvador - Facultad Multidisciplinaria de Occidente)",
+            "September 2020 - June 2021"
+          ],
+          "description": [
+            "During this time, I helped migrating and updating legacy web systems written in Java EE and JSP. I also assisted configuring and maintaining the following services: IP Telephony (Asterisk), Internet and local networks, Moodle Virtual Classrooms, Security Cameras, and Wireless Networks.",
+            "Technologies used: Java, Java EE, JSP, JUnit, Rest and SOAP APIs, MySQL, postgreSQL, LDAP, Linux servers, docker, git"
+          ]
+        }
+      ]
     },
     "projects": {
+      "visitMyPortfolio": "Visita mi portafolio de aplicaciones en",
+      "summary": [
+        "Desarrollo aplicaciones multiplataforma (Android y iOS) y Sistemas Web utilizando Java (Spring Boot) y React.",
+        "Mi objetivo es desarrollar software escalable, confiable y eficiente que brinde una buena experiencia de usuario."
+      ],
       "hoverToZoom": "Pasa el cursor para ampliar",
       "technologiesUsed": "Tecnologías usadas:",
       "seeOnGooglePlay": "Ver en Google Play",
+      "seeOnAppStore": "Ver en App Store",
       "sourceCode": "Código fuente",
       "seeOnline": "Ver en linea",
       "list": [
         {
-          "title": "Gestión de biblioteca ECO",
+          "title": "Biblioteca ECO",
           "ps": [
             "Fue desarrollado para cubrir las necesidades específicas de un colegio reconocido. Permite a los estudiantes buscar libros con diferentes opciones de filtrado y registrar el uso de equipo multimedia. Los usuarios administrativos pueden gestionar libros, autores, editoriales, etiquetas, administrar préstamos de libros y acceder a reportes de inventario y uso de libros y equipo multimedia.",
             "Un elemento clave en este proyecto fue brindar una experiencia de usuario sencilla, de modo que incluso los estudiantes más jóvenes pudieran utilizarlo, sin comprometer las funcionalidades del sistema."
           ]
         },
         {
+          "title": "WiMouse",
+          "ps": [
+            "Control remoto todo en uno. Permite controlar el puntero del ordenador con un touchpad, enviar texto, controlar la reproducción de contenido multimedia. Altamente configurable, ha sido desarrollada centrándose en la simplicidad y facilidad de uso"
+          ]
+        },
+        {
           "title": "Webcam4all",
           "ps": [
-            "Esta app permite usar un dispositivo Android como una webcam 1080 inalámbrica para Windows o mac. Toma cada cuadro de la cámara, lo convierte a JPEG y lo envía por HTTP al cliente a través de wi-fi.",
-            "El desafío más grande fue crear un stream de datos ininterrumpido, con poca latencia y sin perder calidad en la imagen.",
-            "Debido a lo inestable que pueden ser las transmisiones inalámbricas, el cliente envía constantemente peticiones a un endpoint de estado que retorna el número del último frame procesado. Si por alguna razón el servidor deja de enviar imágenes, el cliente intentará reconectarse."
+            "Esta app permite usar un dispositivo Android como una webcam 1080 inalámbrica para Windows o mac. Toma cada cuadro de la cámara, lo convierte a JPEG y lo envía por HTTP al cliente a través de la red local.",
+            "El desafío más grande fue crear un stream de datos ininterrumpido, con poca latencia, tolerancia a fallos y sin perder calidad en la imagen."
+          ]
+        },
+        {
+          "title": "Sitio web para WiMouse",
+          "ps": [
+            "Creado para mostrar la funcionalidad de la app y cómo usarla y configurarla."
+          ]
+        },
+        {
+          "title": "WiMouse Server",
+          "ps": [
+            "Aplicación de escritorio cuya función es recibir eventos de mouse y teclado desde la app móvil WiMouse y ejecutaros en la computadora. Es una aplicación multi-plataforma escrita en NodeJS utilizando el Framework Electron y la librería RobotJS"
           ]
         },
         {
           "title": "Sitio web para Webcam4all",
           "ps": [
-            "Creado para mostrar las funcioes de la app y cómo usarla."
+            "Creado para mostrar la funcionalidad de la app y cómo usarla y configurarla."
           ]
         },
         {
           "title": "Este sitio",
           "printTitle": "Mi portafolio",
-          "description": "Quizá quisiste decir: recursión.",
-          "printDescription": "Es la versión interactiva en linea de este documento."
+          "description": "Mi portafolio en línea."
         },
         {
           "title": "Modelos 3D",
@@ -68,17 +129,31 @@
     },
     "aboutMe": {
       "languages": "Idiomas",
-      "languagesList": ["Inglés (avanzado)", "Español (nativo)"],
+      "languagesList": [
+        "Inglés (avanzado)",
+        "Español (nativo)"
+      ],
       "location": "Ubicación",
       "locationList": [
         "Santa Ana, El Salvador, Centro América",
-        "Zona horaria: GMT-6"
+        "Zona horaria: GMT-6 (con horario flexible)"
       ],
       "education": "Educación",
       "informationSystems": "Ingeniería de Sistemas Informáticos - Universidad de El Salvador",
       "informationSystemsList": [
-        "Egresado con CUM honorífico",
-        "En espera del título debido a la pandemia"
+        "Graduado con CUM honorífico"
+      ]
+    },
+    "education": {
+      "education": "Educación",
+      "informationSystems": "Ingeniería de Sistemas Informáticos - Universidad de El Salvador",
+      "informationSystemsList": [
+        "2015 - 2020",
+        "Graduado con CUM honorífico"
+      ],
+      "aws": "AWS Partner: Accreditation (Technical)",
+      "awsList": [
+        "View certificate"
       ]
     }
   }

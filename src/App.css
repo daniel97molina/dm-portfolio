@@ -1,10 +1,12 @@
 :root {
   
-  --color-primary: #0037db;
+  --color-primary: #d6d4e1;
+  --color-primary-transparent: #d6d4e150;
   --color-secondary: #070042;
-  --color-secondary-trans: rgba(10, 0, 66, 0.315);
-  --color-accent: #ffa25f;
-  --color-main-text: #414141;
+  --color-secondary-trans: rgba(10, 0, 66, 0.048);
+  --color-accent: #FF7754;
+  --color-main-text: #232327;
+  --color-accent-transparent: #ffa25f22;
 }
 
 body,
@@ -12,4 +14,9 @@ html,
 .App,
 #root {
   height: 100%;
+  text-align: justify;
+}
+
+.accent{
+  color: var(--color-accent);
 }

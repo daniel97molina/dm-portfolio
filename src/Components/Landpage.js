@@ -3,18 +3,22 @@ import "./Landpage.css";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import PersonalInfo from "./PersonalInfo";
+import Experience from "./Experience";
+import Education from "./Education";
 
 const Landpage = () => {
   return (
     <div className="landpage">
-            
-      
+
+      <Experience></Experience>
+
+      <Education></Education>
+
       <Skills></Skills>
 
-      <Projects></Projects>
-
       <PersonalInfo></PersonalInfo>
-      
+
+      <Projects></Projects>
     </div>
   );
 };
